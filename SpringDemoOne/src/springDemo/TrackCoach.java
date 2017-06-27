@@ -4,8 +4,8 @@ public class TrackCoach implements Coach {
 
 	// fields
 	private FortuneService fortuneService;
-		
-	//Constructor
+	
+	// constructor
 	public TrackCoach(FortuneService theFortuneService){
 		fortuneService = theFortuneService;
 	}
@@ -17,7 +17,7 @@ public class TrackCoach implements Coach {
 	}
 
 	public String getDailyFortune() {
-		return fortuneService.getFortune();
+		return "Just Do It: " + fortuneService.getFortune();
 	}
 
 }
